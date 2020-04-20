@@ -1,0 +1,34 @@
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+
+#xieyi_0 .title{
+  font-size: 32rpx;
+  font-weight: bolder;
+}
+
+#xieyi_1{
+  height: 36vh!important;
+}
+
+#xieyi_1 checkbox-group{
+  margin-top: -390rpx;
+}
+
+#xieyi_1 .title{
+  margin-top: -400rpx;
+  margin-left: 32rpx;
+}
+
+/* #xieyi_2{
+  height: 28vh!important;
+}
+
+#xieyi_2 checkbox{
+  margin-top: -256rpx;
+}
+
+#xieyi_2 .title{
+  margin-top: -260rpx;
+  margin-left: 32rpx;
+} */

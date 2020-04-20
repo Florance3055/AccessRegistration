@@ -1,0 +1,99 @@
+<view class="cu-list menu sm-border card-menu margin-top" id="info_card">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">姓名</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ name }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">楼号</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ building }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">单元</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ unit }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">房间号</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ room }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">手机号码</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ tel }} </text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">身份证号</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ idcard }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">人员类型</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ type }}</text>
+    </view>
+  </view>
+
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">小区名称</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ plot }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">是否到过疫情严重地区</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ serious }}</text>
+    </view>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="text-black">是否接触过疑似的病人</text>
+    </view>
+    <view class="action">
+      <text class="text-black text-big">{{ contact }}</text>
+    </view>
+  </view>
+</view>
+
+<!-- <navigator open-type="redirect" class="content" url="/pages/information_after/information_after" hover-class="none">
+  <button type="primary" style="margin-top: 24rpx;display: {{display}}" bindtap="getInfo">获取数据</button>
+</navigator> -->
+
+<navigator open-type="redirect" class="content" url="/pages/index/index" hover-class="none">
+  <button type="primary" style="margin-top: 24rpx; ">返回主页</button>
+</navigator>

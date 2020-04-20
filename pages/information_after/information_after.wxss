@@ -1,0 +1,5 @@
+/* pages/information_after/information_after.wxss */
+
+#info_card {
+  box-shadow: 1px 1px 4px #909090;
+}

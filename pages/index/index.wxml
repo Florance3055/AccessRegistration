@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取微信权限 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="cu-list grid col-2 gridBorder" id="card_menu">
+    <!-- <view class="cu-item" bindtap="scanCode" id="grid_1">
+      <view class="cuIcon-scan text-red" style="font-size: 70rpx;">
+      </view>
+      <text style="color: #444">扫码出入</text>
+    </view> -->
+
+    <view class="cu-item">
+      <navigator class="content" url="/pages/information/information" hover-class="none" id="grid_2">
+        <view class="cuIcon-edit text-orange" style="font-size: 70rpx;">
+        </view>
+        <text style="color: #444">填写信息</text>
+      </navigator>
+    </view>
+
+    <view class="cu-item">
+      <navigator class="content" url="/pages/information_after/information_after" hover-class="none" id="grid_3">
+        <view class="cuIcon-form text-yellow" style="font-size: 70rpx;">
+        </view>
+        <text style="color: #444">我的信息</text>
+      </navigator>
+    </view>
+
+    <!-- <view class="cu-item">
+      <navigator class="content" url="/pages/communication/communication" hover-class="none" id="grid_4">
+        <view class="cuIcon-service text-olive" style="font-size: 70rpx;">
+        </view>
+        <text style="color: #444">客服中心</text>
+      </navigator>
+    </view> -->
+  </view>
+
+  <view id="bottom_text">
+    <view class="cuIcon-safe text-black">
+      <text>由微信云开发提供信息安全保障服务</text>
+    </view>
+  </view>
+
+</view>

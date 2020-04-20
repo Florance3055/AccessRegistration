@@ -1,0 +1,40 @@
+<view class="padding-sm" id="cumm_card">
+  <view class="bg-gradual-white padding radius text-center shadow-blur">
+    <view class="padding">
+      <view class="cu-avatar xl round margin-left" style="background-image:url(http://47.103.18.16/步行.png); background-color: white;"></view>
+    </view>
+
+    <view class="text-lg">物业服务电话：17350221608</view>
+    <view class="text-lg">开发人员微信：18695795809</view>
+  </view>
+</view>
+
+<view class="padding-sm" id="cumm_card">
+  <view class="bg-gradual-white padding radius text-left shadow-blur">
+    一、该系统以每个小区为单位，实施“一小区一码”，为每个小区提供专属二维码，用于小区居民扫码登记健康信息，不再进行人工登记。
+  </view>
+</view>
+
+<view class="padding-sm" id="cumm_card">
+  <view class="bg-gradual-white padding radius text-left shadow-blur">
+    二、小区居民通过手机扫描本小区二维码，填写个人健康信息，一次性完成个人相关信息登记，再次出入小区只需扫码核验，实行一次登记、多次扫码。
+  </view>
+</view>
+
+<view class="padding-sm" id="cumm_card">
+  <view class="bg-gradual-white padding radius text-left shadow-blur">
+    三、非本小区居民不进行个人信息扫码登记。
+  </view>
+</view>
+
+<view class="padding-sm" id="cumm_card">
+  <view class="bg-gradual-white padding radius text-left shadow-blur">
+    四、对于无法通过手机扫码登记的老人、儿童等群体，出入小区填报信息时由监护人或小区工作人员予以辅助登记，核验后方可通行。
+  </view>
+</view>
+
+<view class="padding-sm" id="cumm_card">
+  <view class="bg-gradual-white padding radius text-left shadow-blur">
+    五、健康环境需要大家齐心协力共同维护，请广大市民自觉遵守扫码登记进入小区的管理要求，如实填写个人健康信息，理解、配合、助力我市的疫情防控工作。
+  </view>
+</view>

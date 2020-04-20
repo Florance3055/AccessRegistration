@@ -1,0 +1,4 @@
+/* pages/communication/communication.wxss */
+.text-lg{
+  text-shadow: 0 0 4px #fff;
+}

@@ -1,0 +1,92 @@
+<form bindsubmit="submitForm">
+  <view class="cu-form-group">
+    <view class="title">姓名</view>
+    <input placeholder="请输入姓名" name='name' value='{{form.name}}'></input>
+  </view>
+
+  <view class="cu-form-group section">
+    <view class="title">楼号</view>
+    <input placeholder="请输入楼号" type="number" maxlength="4" name='building' value='{{form.building}}' />
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">单元</view>
+    <input placeholder="请输入单元" type="number" maxlength="4" name='unit' value='{{form.unit}}'></input>
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">房间号</view>
+    <input placeholder="请输入房间号" type="number" maxlength="4" name='room' value='{{form.room}}'></input>
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">手机号码</view>
+    <input placeholder="请输入手机号码" type="number" maxlength="11" name="tel" value="{{ form.tel }}"></input>
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">身份证号</view>
+    <input placeholder="请输入身份证号" type="idcard" maxlength="18" name='idcard' value='{{form.idcard}}'></input>
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">人员类型</view>
+    <picker bindchange="PickerChange_1" value="{{index_1}}" range="{{picker_1}}">
+      <view class="picker">
+        {{index_1?picker_1[index_1]:'业主'}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">小区名称</view>
+    <picker bindchange="PickerChange_2" value="{{index_2}}" range="{{picker_2}}">
+      <view class="picker">
+        {{index_2?picker_2[index_2]:'敬贤楼'}}
+      </view>
+    </picker>
+  </view>
+
+  <radio-group class="block" bindchange="RadioChange_1"> 
+    <view class="cu-form-group" >
+      <view class="title">是否到过疫情严重地区</view>
+      是
+      <radio checked="{{ this.yesorno_1 }}"></radio>
+      否
+      <radio checked></radio>
+    </view>
+  </radio-group>
+
+  <radio-group class="block" bindchange="RadioChange_2">
+    <view class="cu-form-group">
+      <view class="title">是否接触过疑似的病人</view>
+      是
+      <radio checked="{{ this.yesorno_2 }}"></radio>
+      否
+      <radio checked></radio>
+    </view>
+  </radio-group>
+
+  <view class="cu-form-group margin-top" id="xieyi_0">
+    <view class="title">本人郑重承诺
+    </view>
+  </view>
+  <view class="cu-form-group" id="xieyi_1">
+    <checkbox-group bindchange="CheckboxChange">
+      <checkbox checked="{{ this.agree }}" />
+    </checkbox-group>
+    <view class="title">
+    <text>为疫情防控，本人同意以上信息依法提交所在辖区疫情防控部门统筹管理。</text>
+    <text>上述信息是我本人填写，本人对信息内容的真实性和完整性负责。如果信息有误或缺失，本人愿承担相应的法律责任。同时，本人保证遵守防疫管控的各项规定，配合并听从各项措施和要求。</text>
+    </view>
+  </view>
+
+
+  <!-- <view class="cu-form-group" id="xieyi_2">
+    <checkbox name="agree" checked="{{ form.agree }}"/>
+    <view class="title">
+    </view>
+  </view> -->
+
+  <button class="weui-btn" type="primary" formType="submit" style="margin-top: 36rpx;margin-bottom: 36rpx; ">提交</button>
+</form>

@@ -1,0 +1,13 @@
+/**app.wxss**/
+.container {
+  height: 100vh;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+/**colorui.wxss**/
+@import "ui/colorui/main.wxss";
+@import "ui/colorui/icon.wxss";
+
+/**weui.wxss**/
+/* @import "ui/weui/weui.wxss"; */
